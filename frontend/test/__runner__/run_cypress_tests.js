@@ -95,9 +95,9 @@ const init = async () => {
             "--reporter-options",
             "mochaFile=cypress/results/results-[hash].xml",
             "--record",
-            "--parallel",
-            "--group",
-            process.env["CYPRESS_GROUP"],
+            // "--parallel",
+            // "--group",
+            // process.env["CYPRESS_GROUP"],
           ]
         : []),
       ...(hasEnterpriseToken ? ["--env", "HAS_ENTERPRISE_TOKEN=true"] : []),
